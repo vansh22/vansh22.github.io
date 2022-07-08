@@ -1,2 +1,2 @@
 # vansh22.github.io
-Hospital Management Website
+It is responsive hospital website in which a lot of useful features are included like book an appointment page and patient portal so that the reports and medical prescription of patients can be accessed easily.
