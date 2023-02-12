@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/appointment.css" />
+    <link rel="stylesheet" href="/js/appointment.js" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14009.430715432385!2d77.3697215!3d28.6190403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef719cf3f0b3%3A0xc24d4fda4fdca748!2sFortis%20Hospital!5e0!3m2!1sen!2sin!4v1642686731969!5m2!1sen!2sin"
+          height="300"
+          width="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          class="padding1"
+        ></iframe>
+        <div class="adjust">
+          <p><b class="padding2">Sector-62 ,Block-B (Noida)</b></p>
+
+          <p class="padding3">
+            Complimentary underground parking available. Please follow Office
+            visitor parking “LO” level.
+          </p>
+
+          <p class="para padding3">
+            <b
+              >Phone: 101-234-9857 <br />
+              Email: healthassistant@gmail.com</b
+            >
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <h2 class="color1">Schedule an Appointment</h2>
+        <h5>
+          Please contact our office by phone or complete the appointment request
+          form below. <br />
+          Our scheduling coordinator will contact you to confirm your
+          appointment.
+        </h5>
+        <br />
+        <hr />
+        <br />
+
+        <div class="button1">
+          <button class="texting1">Patient Appointment</button>
+        </div>
+
+        <p>Fill the form given below to book an appointment!</p>
+
+        <div class="float">
+          <p>* Required Fields</p>
+        </div>
+
+        <div class="reason">
+          <p>Reason for your Appointment*:</p>
+          <form action="/action_page.php">
+            <input type="checkbox" class="size" name="s" />
+            <label for="Consultant"> Consultant</label>
+            <input type="checkbox" class="size" name="s" />
+            <label for=" Treatment"> Treatment</label>
+          </form>
+        </div>
+        <br />
+        <div class="q">
+          <form action="/action_page.php">
+            <div class="left11">
+              <label for="fname" class="margin">First Name*</label> <br />
+              <input type="text" class="fname" name="firstname" required />
+            </div>
+            <div class="right22">
+              <label for="fname" class="margin">Last Name*</label> <br />
+              <input type="text" class="fname" name="firstname" required />
+            </div>
+            <div class="left11">
+              <label for="fname" class="margin">Address*</label> <br />
+              <input type="text" class="fname" name="firstname" required />
+            </div>
+            <div class="right22">
+              <label for="fname" class="margin">Postal Code</label> <br />
+              <input type="text" class="fname" name="firstname" />
+            </div>
+            <div class="left11">
+              <label for="fname" class="margin">Business Phone</label> <br />
+              <input type="text" class="fname" name="firstname" />
+            </div>
+            <div class="right22">
+              <label for="fname" class="margin">Cell Phone*</label> <br />
+              <input type="text" class="fname" name="firstname" required />
+            </div>
+            <div class="left11">
+              <label for="fname" class="margin">Email*</label> <br />
+              <input type="text" class="fname" name="firstname" required />
+            </div>
+            <div class="right22">
+              <label for="fname" class="margin">Preferred Date*</label> <br />
+              <input type="text" class="fname" name="firstname" required />
+            </div>
+            <div class="left11">
+              <label for="fname" class="margin">Preferred Time*</label> <br />
+              <input type="text" class="fname" name="firstname" required />
+            </div>
+            <div class="right22">
+              <label for="fname" class="margin">Attach Files</label> <br />
+              <input type="text" class="fname" name="firstname" />
+            </div>
+            <div class="full_size">
+              <label for="comments"> Comment or Message*</label> <br />
+              <input type="text" class="user_comment" />
+            </div>
+          </form>
+        </div>
+        <div class="setting_its_width">
+          <b>
+            <p>
+              By filling this form out, it does not guarantee an appointment,
+              the office will contact them in 1 to 2 business days to provide
+              appointment date and time. If this is an emergency, please call
+              our office.
+            </p>
+          </b>
+        </div>
+        <div
+          class="g-recaptcha"
+          data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"
+        ></div>
+        <div class="submit">
+          <button class="submit submit1">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

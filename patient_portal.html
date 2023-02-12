@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Portal</title>
+    <link rel="stylesheet" href="/css/patient_portal.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left">
+        <img src="/login/header-homepage-cropped.png" alt="" class="image" />
+      </div>
+      <div class="right">
+        <div class="content">
+          <p class="heading"><b> Patient Portal</b></p>
+          <form action="/action_page.php">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Username or Email id"
+              class="details"
+            />
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Password"
+              class="details"
+            />
+            <br />
+            <button class="button"><b> Submit </b></button>
+          </form>
+          <div class="line"></div>
+          <div class="or">or</div>
+          <div class="line"></div>
+          <div class="new">
+            <img src="/login/download.png" alt="logo-gmail" class="gmail" />
+            <p class="non_wrapping">
+              <a
+                href="https://accounts.google.com/AddSession/identifier?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Ftab%3Dkk&ec=GAlAwAE&flowName=GlifWebSignIn&flowEntry=AddSession"
+                >Login with Gmail</a
+              >
+            </p>
+          </div>
+          <div class="forget">
+            <a href="forget_pass.html">Forget Password?</a>
+          </div>
+        </div>
+        <div class="content">
+          <p>Don't have an account?</p>
+          <a href="sign_up.html" class="t">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

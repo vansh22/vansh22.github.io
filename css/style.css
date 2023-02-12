@@ -1,0 +1,406 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#logo span, footer span{
+    color: #58a2ec;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height:7rem;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar #logo{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#navbar #logo h4{
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar #logo img{
+    width: 3rem;
+    height: 3rem;
+    padding: 5px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.25rem;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 21px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#navbar #patient-portal{
+    display: flex;
+}
+#background-video {
+    width: 100%;
+    height: 616px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    /* opacity: 0.7; */
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3.3rem;
+}
+#home h1{
+    color: #00458B;
+    font-size: 3rem;
+    font-weight: 900;
+}
+#home p{
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-size: 2rem;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input[type='text']{
+    font-size: 1.25rem;
+    width: 30%;
+    padding: 6px;
+    border:2px solid #35b6b4;
+    border-radius: 6px;
+    transition: width 0.35s ease-in-out;
+}
+.search input[type='text']:focus{
+    width: 50%;
+}
+#contact {
+    position: fixed;
+    bottom: 3.25rem;
+    right: 2.25rem;
+    font-size: 1rem;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 1px black;
+}
+#contact:hover, .chat:hover{
+    transform: scale(1.1);
+}
+.chat{
+    position: fixed;
+    bottom: 3.1rem;
+    right: 9.9rem;
+    padding: 5px;
+    background-color:#35b6b4;
+    box-shadow: 2px 2px 4px 0px black;
+    border-radius: 5px;
+}
+#about .welcome{
+    padding: 42px 292px;
+    margin: 64px 50px;
+}
+#about .welcome p{
+    font-size: 1.156rem;
+    padding: 10px 0;
+}
+#about .about-us{
+    display: flex;
+    padding: 12px;
+    background-color: #ececec;
+}
+#about .our-values{
+    width: 60%;
+    margin: 20px;
+    padding: 18px;
+}
+#about .our-values .points{
+    padding: 16px;
+    display: flex;
+}
+#about .our-values .points li{
+    padding: 5px;
+}
+#about .about-us .our-vision{
+    width: 40%;
+    margin: 20px;
+    padding: 18px;
+}
+#services{
+    display: flex;
+    margin: 5vw 5vw;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 2px 3px 7px 5px gray;
+    /* background-color: #35b6b4; */
+}
+#services .medical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 50%;
+}
+#services .dental{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 50%;
+}
+#services .behavioural-health{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 50%;
+}
+#services .services-img{
+    width: 12rem;
+    height: 12rem;
+    /* padding: 12px; */
+}
+#social-media .facebook{
+    color: #4267B2;
+}
+#social-media .twitter{
+    color: #00acee;
+}
+#social-media .linkedin{
+    color: #0e76a8;
+}
+#social-media .instagram{
+    color: #bc2a8d;
+    color: #dd2a7b;
+}
+#social-media{
+    margin: 4rem 0;
+}
+#social-media .connect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ececec;
+    padding: 2.25rem;
+}
+#social-media .connect a{
+    text-decoration: none;
+}
+#social-media .connect a i{
+    padding: 12px;
+}
+#social-media .connect a:hover{
+    transform: scale(1.1);
+}
+#email-list{
+    display: flex;
+}
+#email-list .subscribe{
+    height: 40vw;
+    width: 45%;
+    background-color: #00458B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 12px 64px 12px;
+}
+#email-list .subscribe h1{
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+}
+#email-list .subscribe p{
+    color: white;
+    padding: 10px;
+}
+#email-list .subscribe img{
+    width: 3.25rem;
+    margin: 10px;
+}
+#email-list .subscribe input[type="text"], #email-list .subscribe input[type="email"]{
+    padding: 6px 20px;
+    width: 20rem;
+    margin: 12px;
+    border: none;
+    border-radius: 5px;
+    transition: width 0.35s ease-in-out;
+}
+#email-list .subscribe input[type="submit"]{
+    padding: 12px 20px;
+    font-size: 1rem;
+    width: 12rem;
+    display: block;
+    margin: 12px auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: #35b6b4;
+}
+#email-list .subscribe input[type="submit"]:hover{
+    transform: scale(1.1);
+}
+#email-list .consultation h1, #email-list .consultation p{
+    padding: 12px;
+    margin: 1rem  2rem;
+    color: white;
+}
+#email-list .consultation p{
+    font-size: 1.25rem;
+}
+#email-list .consultation::before{
+    content: "";
+    background: url('/home images/doctor-consult-illustration.svg') no-repeat center center/cover;
+    height: 40vw;
+    width: 50%;
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    bottom: inherit;
+    right: inherit;
+    z-index: -1;
+}
+#email-list .consultation input[type="button"]{
+    padding: 16px 36px;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    background-color: #0082a8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 2.75rem;
+    cursor: pointer;
+}
+#email-list .consultation input[type="button"]:hover{
+    background-color: #006c8d;
+}
+footer{
+    background-color: #ececec;
+    overflow: hidden;
+}
+footer .section{
+    display: flex;
+}
+footer .about{
+    width: 70%;
+    padding: 0 8.5rem 0 2.5rem;
+    margin: 1rem;
+}
+footer .about img{
+    width:100px;
+    height: 100px;
+    margin: 1rem;
+}
+footer .quick-links{
+    width: 30%;
+}
+footer .title{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-shadow: 0px 0px 2px black;
+}
+footer .quick-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+}
+footer .quick-links .links{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    padding: 12px;
+}
+footer .copyright a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin: 12px 56px 40px 0;
+}
+
+/* Utility classes */
+.center{
+    text-align: center;
+}
+.btn{
+    color: white;
+    background-color: #00458B;
+    padding: 6px 20px;
+    border: 1px solid white;
+    margin: 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: background-color 0.35s ease-out;
+}
+.btn:hover{
+    background-color: #1675d3;
+    background-color: #35b6b4;
+}
+.h-primary{
+    padding: 10px;
+    color: #00458B;
+    font-size: 2rem;
+}
+.h-secondary{
+    padding: 10px;
+    color: #00458B;
+    font-size: 1.75rem;
+}
+.para{
+    font-size: 1.156rem;
+    padding: 10px 0;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adding media queries */
+@media screen and (max-width:1015px){
+    #navbar{
+        flex-direction: column;
+    }
+}
